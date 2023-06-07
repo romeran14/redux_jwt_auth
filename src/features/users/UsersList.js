@@ -19,7 +19,7 @@ const UsersList = () => {
                 <h1>Users List</h1>
                 <ul>
                     {users.map((user, i) => {
-                        return <li key={i}>{user.username}</li>
+                        return <li key={user.id}>{user.firstname}{user.lastname}</li>
                     })}
                 </ul>
                 <Link to="/welcome">Back to Welcome</Link>
