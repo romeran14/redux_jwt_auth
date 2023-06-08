@@ -5,7 +5,10 @@ const Layout = () => {
   <>
     <button
       onClick={() => {
-        fetch("http://192.168.3.239:8000/countries/data")
+        fetch("http://192.168.3.239:8000/countries/data",{
+            mode: 'no-cors'
+            
+          })
           .then((response) => response.json())
           .then((data) => console.log(data))
           .catch((error) => console.error(error));
