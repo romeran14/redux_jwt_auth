@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  return;
+  return(
   <>
     <button
       onClick={() => {
@@ -14,7 +14,7 @@ const Layout = () => {
       Haz clic aquí para obtener los datos
     </button>
     <Outlet />
-  </>;
+  </>)
 };
 
 export default Layout;
